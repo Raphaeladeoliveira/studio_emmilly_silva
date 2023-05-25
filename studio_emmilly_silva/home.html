@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(logo_emmilly_main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: width center;
+        }
+        h1 , h2, label{
+            color:  rgba(139, 72, 83, 0.746);
+            font-family: sans-serif;
+        }
+        #marcar{
+            background-color: rgba(208, 122, 136, 0.883);
+            color: white;
+            padding: 8px;
+            border: none;
+            width: 150px;
+            border-radius: 5px;
+        }#marcar:hover{
+            background-color: rgb(223, 95, 116);;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Seja bem vindo</h1>
+            <br>
+            <h2>Seu espaço para marcação de horarios...</h2>
+            <label for="">Data</label>
+            <input type="datetime-local" name="data"  id="datahorario">
+            <input type="submit" onclick="marcacao()" id="marcar">
+           
+        </div>
+    </main>
+    <script>
+        function marcacao(){
+
+            alert("Horário marcado com sucesso");
+        }
+    </script>
+</body>
+</html>

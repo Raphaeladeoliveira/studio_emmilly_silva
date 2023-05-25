@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(222, 148, 162, 0.834);
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgba(139, 72, 83, 0.746);
+        }
+        h2{
+            color: rgba(139, 72, 83, 0.746); 
+        }
+        div{
+            background-color: rgb(234, 208, 208);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 10px;
+        }
+        input{
+            color: rgb(201, 94, 112);
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        #enviar{
+            background-color: rgba(208, 122, 136, 0.883);
+            color: white;
+            padding: 8px;
+            border: none;
+            width: 150px;
+            border-radius: 5px;
+        }
+        #enviar:hover{
+            background-color: rgb(223, 95, 116);
+        }
+    </style>
+</head>
+<body>
+    <div class=" tela-login">
+        <h1>STUDIO EMMILLY SILVA</h1>
+        <h2>Login</h2>
+        <input type="text" placeholder="Nome" id="login">
+        <br> <br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br> <br>
+        <input type="submit" onclick="logar()" id="enviar">
+        
+
+        
+    </div>
+    <script>
+        function logar(){
+            var login = document.getElementById("login").value;
+            var senha = document.getElementById("senha").value;
+
+            if(login == "admin" || senha == "1234"){
+                alert("Sucesso!");
+                location.href = "home.html";
+            }else{
+                alert("Usuário e/ou Senha inválida");
+            }
+        }
+    </script>
+    
+</body>
+</html>
